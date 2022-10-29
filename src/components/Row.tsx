@@ -3,6 +3,7 @@ import {View, StyleSheet, TouchableOpacity} from 'react-native';
 import {connect} from 'react-redux';
 
 import {width} from '../utils/constants';
+import AnimatedDisk from './AnimatedDisk';
 
 const Row = ({row, play, gameState}) => {
   return (
@@ -50,8 +51,9 @@ const Cell = ({value, columnIndex, play, PlayerOneColor, PlayerTwoColor}) => {
           height: 50,
           width: 50,
           borderRadius: 25,
-          backgroundColor: color,
+          backgroundColor: '#fff',
         }}></View>
+      {(value == 1 || value == 2) && <AnimatedDisk color={color} />}
     </TouchableOpacity>
   );
 };

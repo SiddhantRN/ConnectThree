@@ -7,6 +7,7 @@ import {resetScores, newGame} from '../redux/actions';
 import DarkModeSwitch from '../components/DarkModeSwitch';
 import {generateNewBoard} from '../utils/gameUtils';
 import CustomButton from '../components/CustomButton';
+import AnimatedDisk from '../components/AnimatedDisk';
 
 const Welcome = ({
   navigation,
@@ -121,13 +122,13 @@ const styles = StyleSheet.create({
   },
   titleTextLight: {
     marginTop: height * 0.2,
-    fontSize: 25,
+    fontSize: 29,
     fontFamily: 'joystix',
     color: lightTheme.textColor,
   },
   titleTextDark: {
     marginTop: height * 0.2,
-    fontSize: 25,
+    fontSize: 29,
     fontFamily: 'joystix',
     color: darkTheme.textColor,
   },
