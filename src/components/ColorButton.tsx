@@ -13,8 +13,6 @@ const ColorButton = ({color, onPress, activeColor}) => {
         margin: 5,
         backgroundColor: color,
         borderRadius: 25,
-        // borderWidth: color == activeColor ? 4 : 0,
-        // borderColor: 'yellow',
         justifyContent: 'center',
         alignItems: 'center',
       }}

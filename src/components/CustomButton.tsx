@@ -1,9 +1,8 @@
 import React from 'react';
-import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
+import {StyleSheet, TouchableOpacity, Text} from 'react-native';
 import {connect} from 'react-redux';
 
-import {darkTheme, height, lightTheme, width} from '../utils/constants';
-import {resetScores} from '../redux/actions';
+import {darkTheme, lightTheme} from '../utils/constants';
 
 const CustomButton = ({title, gameState, onPress}) => {
   return (

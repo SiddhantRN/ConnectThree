@@ -1,7 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, TouchableOpacity, Text, Switch} from 'react-native';
-// import {View, StyleSheet, TouchableOpacity, Text} from 'react-native';
-// import {Switch} from 'react-native-switch';
+import {View, StyleSheet, Text, Switch} from 'react-native';
 import {connect} from 'react-redux';
 
 import {toggleDarkMode} from '../redux/actions';
@@ -56,7 +54,6 @@ const mapStateToProps: any = state => ({
 const mapDispatchToProps: any = dispatch => {
   return {
     dispatchToggleDarkMode: value => dispatch(toggleDarkMode(value)),
-    //   dispatchSetPlayerTwoColor: color => dispatch(setPlayerTwoColor(color)),
   };
 };
 

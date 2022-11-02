@@ -19,7 +19,6 @@ const Welcome = ({
     if (
       JSON.stringify(gameState.board) === JSON.stringify(generateNewBoard())
     ) {
-      console.log('active board here');
       return false;
     }
     return true;

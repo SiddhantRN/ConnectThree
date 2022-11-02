@@ -18,14 +18,6 @@ const Row = ({row, play, gameState}) => {
           PlayerTwoColor={gameState.PlayerTwoColor}
         />
       ))}
-      {/* <TouchableOpacity
-        style={{
-          height: 30,
-          width: 30,
-          borderRadius: 15,
-          backgroundColor: 'red',
-        }}
-        onPress={() => console.log(row)}></TouchableOpacity> */}
     </View>
   );
 };
@@ -44,8 +36,6 @@ const Cell = ({value, columnIndex, play, PlayerOneColor, PlayerTwoColor}) => {
       style={styles.cell}
       onPress={() => play(columnIndex)}
       activeOpacity={1}>
-      {/* value== null=> don't show animated */}
-      {/* value == 1 or 2 show animated.view */}
       <View
         style={{
           height: 50,

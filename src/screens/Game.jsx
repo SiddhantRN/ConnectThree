@@ -30,7 +30,6 @@ const Game = ({
   navigation,
 }) => {
   const play = c => {
-    // console.log('here', c);
     if (!gameState.gameOver) {
       let board = deepCloneBoard(gameState.board);
       //check if cell is taken by starting at the bottom row and working up
@@ -40,7 +39,6 @@ const Game = ({
           break;
         }
       }
-      // console.log('here now', board);
       // Check status of board
       let result = checkForWin(board);
       if (result === gameState.player1) {
@@ -171,11 +169,11 @@ const styles = StyleSheet.create({
   },
 });
 
-const mapStateToProps: any = state => ({
+const mapStateToProps = state => ({
   gameState: state,
 });
 
-const mapDispatchToProps: any = dispatch => {
+const mapDispatchToProps = dispatch => {
   return {
     dispatchEndGame: payload => dispatch(endGame(payload)),
     dispatchSetPlayerOneWin: payload => dispatch(setPlayerOneWin(payload)),

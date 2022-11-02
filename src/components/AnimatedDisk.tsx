@@ -4,8 +4,6 @@ import Animated, {
   useSharedValue,
   useAnimatedStyle,
   withSpring,
-  useAnimatedGestureHandler,
-  runOnJS,
 } from 'react-native-reanimated';
 import {height, width} from '../utils/constants';
 
@@ -19,9 +17,7 @@ const AnimatedDisk: React.FC<ComponentProps> = ({color}) => {
 
   useEffect(() => {
     setTimeout(() => {
-      //   translateX.value = withSpring();
       translateY.value = withSpring(0, {stiffness: 40, mass: 0.5});
-      //   console.log('executes');
     }, 200);
   }, []);
 

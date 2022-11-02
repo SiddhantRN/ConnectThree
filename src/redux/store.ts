@@ -7,7 +7,6 @@ import {persistStore, persistReducer} from 'redux-persist';
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  //   blacklist: ["unpersistedReducer"]
 };
 
 const persistedReducer = persistReducer(persistConfig, mainReducer);
